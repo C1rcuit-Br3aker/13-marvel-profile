@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>13 Marvel Profile</title>
+  <link href='https://fonts.googleapis.com/css?family=Special+Elite|Open+Sans' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="/app.css">
 </head>
 <body>
@@ -12,14 +13,12 @@
   </div>
 
   <!-- side bar -->
-  <div class="series-details__side-bar">
-    <img src="" alt="" class="profile-pic">
-    <h4 class="character-name__main"></h4>
+  <div class="side-bar">
+    <div class="profile-pic__container"></div>
+    <h2 class="character-name__main"></h2>
     <p class="years-active"></p>
-    <h3 class="creators-title"></h3>
+    <h3 class="creators-title">Creators</h3>
     <ul class="creators-list">
-      <li class="creators-list-item"></li>
-      <!--multiple creators  -->
     </ul>
   </div>
 
@@ -30,10 +29,10 @@
     </div>
     <div class="characters-list__container">
       <ul class="characters-list">
-        <li class="character-list-items">
+        <!-- <li class="character-list-items">
           <img src="" alt="" class="character-picture">
           <p class="character-names"></p>
-        </li>
+        </li> -->
         <!--multiple characters  -->
       </ul>
     </div>
@@ -46,12 +45,12 @@
     </div>
     <div class="comics-list__container">
       <ul class="comics-list">
-        <li class="comics-list-items">
+        <!-- <li class="comics-list-items">
           <img src="" alt="" class="comics-picture">
           <h4 class="comic-number"></h4>
           <p class="character-names"></p>
           <button class="read-more"></button>
-        </li>
+        </li> -->
         <!--multiple comics  -->
       </ul>
     </div>
@@ -63,6 +62,8 @@
   <script src="/app.js" charset="utf-8"></script>
 
   <script type="text/javascript">
+  var index = require(`app`);
+  index();
   </script>
 </body>
 </html>
