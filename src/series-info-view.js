@@ -1,7 +1,7 @@
 
 
 export default class SeriesInfoView {
-  constructor(element, data, startingItems = []) {
+  constructor(element, data) {
     this.element = element;
     this.data = data;
     this.items = [];
@@ -10,9 +10,7 @@ export default class SeriesInfoView {
     this.addImage();
     this.addTitle();
     this.addYears();
-    startingItems.forEach(() => {
-      this.addCreators();
-    });
+    this.addCreators();
   }
 
   addImage() {
@@ -29,11 +27,12 @@ export default class SeriesInfoView {
   }
 
   addCreators() {
-    this.items = [
-      ...this.items,
-      this.element.querySelector(`.creators-list`).list.appendChild(`li`).innerText = `
-      ${this.data.creators.name}`,
-
-    ];
+    this.data.creators.items.forEach((who) => {
+      const z = document.createElement(`li`);
+      const abc = document.querySelector(`.creators-list`);
+      abc.appendChild(z).innerText = who.name;
+      // document.querySelector(`.creators-list`).createElement(`li`).innerText = `
+      // ${this.data.creators.name}`;
+    });
   }
 }
