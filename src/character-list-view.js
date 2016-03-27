@@ -9,11 +9,10 @@ export default class CharacterListView {
   }
 
   renderNew() {
-    debugger;
     this.person.forEach((hero) => {
-      const z = new CharacterView(hero);
-      const wtf = this.el.querySelector(`.characters-list`);
-      wtf.appendChild(z.el);
+      const newCharacter = new CharacterView(hero);
+      const characterList = this.el.querySelector(`.characters-list`);
+      characterList.appendChild(newCharacter.el);
     });
   }
 }
