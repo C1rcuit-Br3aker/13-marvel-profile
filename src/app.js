@@ -25,7 +25,6 @@ export default function () {
 
         .then((response) => response.json())
         .then((info) => {
-          debugger;
           const comics = document.querySelector(`.comics__container`);
           const books = new ComicListView(comics, info.data.results);
         });

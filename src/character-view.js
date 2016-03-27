@@ -8,7 +8,7 @@ export default class CharacterView {
   }
 
   addPicture() {
-    this.el.classList.add(`.character-list-item`);
+    this.el.classList.add(`character-list-item`);
     this.el.innerHTML = `
     <div class="character-picture">
     <img class="character-pic" src="${this.data.thumbnail.path}.${this.data.thumbnail.extension}" alt="The Punisher"/></div>

@@ -1,0 +1,29 @@
+.side-bar {
+  max-width: 30%;
+}
+
+.profile-pic__container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.profile-pic__container:before {
+  display: block;
+  padding-top: 100%;
+  content: '';
+}
+
+.profile-pic {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.creators-title {
+  border-bottom: $brand-border;
+  font-family: $brand-display;
+}
