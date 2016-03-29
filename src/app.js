@@ -2,7 +2,7 @@
 import SeriesInfoView from 'series-info-view';
 import CharacterListView from 'character-list-view';
 import ComicListView from 'comic-list-view';
-const id = `18572`
+const id = `16410`;
 
 export default function () {
   fetch(`http://gateway.marvel.com:80/v1/public/series/${id}?apikey=45ec48065956a166a50dcd3fe892c053`)

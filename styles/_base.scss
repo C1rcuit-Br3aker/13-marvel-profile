@@ -1,0 +1,12 @@
+.main {
+  display: flex;
+  max-width: $container-width;
+  margin: 2rem auto;
+  font-family: $brand-sans;
+
+}
+
+.content {
+  width: 75%;
+  margin-left: 2rem;
+}

@@ -5,68 +5,8 @@
 // @import 'font-awesome';
 @import 'box-sizing';
 @import 'variables';
-@import 'side-bar';
+@import 'base';
 @import 'top-nav';
-
-.main {
-  display: flex;
-  max-width: $container-width;
-  margin: 2rem auto;
-  font-family: $brand-sans;
-
-}
-
-.content {
-  width: 75%;
-  margin-left: 2rem;
-}
-
-.characters-header {
-  margin-top: 0;
-  border-bottom: $brand-border;
-  font-family: $brand-display;
-}
-
-.comics-header {
-  border-bottom: $brand-border;
-  font-family: $brand-display;
-}
-
-.comics-list__container {
-  display: flex;
-}
-
-.comics-list-item {
-  width: 10rem;
-  padding: 0 $gutter / 2;
-}
-
-.comics-list {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.character-picture {
-  position: relative;
-  width: 100%;
-  max-width: 10rem;
-  overflow: hidden;
-
-  &:before {
-    display: block;
-    padding-top: 100%;
-    content: '';
-  }
-}
-
-.comic-picture {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-
-  &:before {
-    display: block;
-    padding-top: 100%;
-    content: '';
-  }
-}
+@import 'side-bar';
+@import 'characters';
+@import 'comics';
