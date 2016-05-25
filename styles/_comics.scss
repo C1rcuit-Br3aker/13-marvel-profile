@@ -1,0 +1,89 @@
+.comics-header {
+  border-bottom: $brand-border;
+  font-family: $brand-display;
+}
+
+.comics-list-item {
+  display: flex;
+  flex-direction: column;
+  width: 10rem;
+  margin-bottom: $gutter;
+  padding: 0 $gutter / 2;
+  font-size: 0.8rem;
+}
+
+.comics-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.comic-picture {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+
+  &:before {
+    display: block;
+    padding-top: 100%;
+    content: '';
+  }
+}
+
+.comic-names {
+  flex-grow: 1;
+}
+
+.read-more {
+  padding: $gutter / 2;
+  border: 0;
+  border-radius: 0.2rem;
+  outline: 0;
+  background: $brand-primary;
+  color: $brand-white;
+
+  &:hover {
+    text-shadow: 1px 1px $brand-black;
+    cursor: pointer;
+  }
+
+}
+
+.modal {
+  display: none;
+}
+
+.modal--active {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  background: $modal-screen;
+  z-index: 1;
+}
+
+.modal-container {
+  display: flex;
+  position: fixed;
+  top: 50%;
+  left: 17%;
+  flex-direction: column;
+  width: $container-width;
+  padding: $gutter;
+  transform: translate(0%, -50%);
+  background: $brand-white;
+  font-size: $gutter;
+}
+
+.close {
+  align-self: flex-end;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 1px solid $brand-white;
+  background: $brand-white;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,23 @@
+.main {
+  display: flex;
+  max-width: $container-width;
+  margin: $gutter * 2 auto;
+  font-family: $brand-sans;
+
+}
+
+.content {
+  width: 75%;
+  margin-left: $gutter * 2;
+}
+
+.legal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2rem;
+  background: $brand-primary;
+  color: $brand-white;
+  font-family: $brand-display;
+  text-align: center;
+}

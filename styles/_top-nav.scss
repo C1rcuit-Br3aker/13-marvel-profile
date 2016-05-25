@@ -1,0 +1,18 @@
+
+.top-nav__conatiner {
+  background: $brand-primary;
+
+}
+
+.top-nav {
+  max-width: $container-width;
+  height: 3rem;
+  margin: auto;
+}
+
+.page-title {
+  margin: 0;
+  padding-top: $gutter;
+  color: $brand-white;
+  font-family: $brand-display;
+}

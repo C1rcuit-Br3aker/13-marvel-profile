@@ -1,0 +1,27 @@
+.characters-header {
+  margin-top: 0;
+  border-bottom: $brand-border;
+  font-family: $brand-display;
+}
+
+.characters-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.character-list-item {
+  width: 10rem;
+  padding: 0 $gutter / 2;
+}
+
+.character-picture {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+
+  &:before {
+    display: block;
+    padding-top: 100%;
+    content: '';
+  }
+}
